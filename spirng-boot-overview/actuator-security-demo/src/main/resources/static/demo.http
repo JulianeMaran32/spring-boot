@@ -1,0 +1,11 @@
+### return "Hello World"
+GET http://localhost:8080
+Authorization: Basic admin 123456
+
+### workout
+GET http://localhost:8080/workout
+Authorization: Basic admin 123456
+
+### fortune
+GET http://localhost:8080/fortune
+Authorization: Basic admin 123456

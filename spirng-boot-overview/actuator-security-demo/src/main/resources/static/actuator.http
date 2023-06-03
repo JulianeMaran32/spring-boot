@@ -1,0 +1,87 @@
+### actuator
+GET http://localhost:8080/actuator
+Authorization: Basic admin 123456
+
+### health
+GET http://localhost:8080/actuator/health
+Authorization: Basic admin 123456
+
+### health-path
+GET http://localhost:8080/actuator/health/{*path}
+Authorization: Basic admin 123456
+
+### info
+GET http://localhost:8080/actuator/info
+Authorization: Basic admin 123456
+
+### auditevents - eventos de auditoria da aplicação
+GET http://localhost:8080/actuator/auditevents
+Authorization: Basic admin 123456
+
+### beans - lista de todos os beans registrados no contexto do Spring
+GET http://localhost:8080/actuator/beans
+Authorization: Basic admin 123456
+
+### mappings - lita todos os caminhos @RequestMapping
+GET http://localhost:8080/actuator/mappings
+Authorization: Basic admin 123456
+
+### caches
+GET http://localhost:8080/actuator/caches
+Authorization: Basic admin 123456
+
+### caches-cache
+GET http://localhost:8080/actuator/caches/{cache}
+Authorization: Basic admin 123456
+
+### conditions
+GET http://localhost:8080/actuator/conditions
+Authorization: Basic admin 123456
+
+### configprops
+GET http://localhost:8080/actuator/configprops
+Authorization: Basic admin 123456
+
+### configprops-prefix
+GET http://localhost:8080/actuator/configprops/{prefix}
+Authorization: Basic admin 123456
+
+### env
+GET http://localhost:8080/actuator/env
+Authorization: Basic admin 123456
+
+### env-toMatch
+GET http://localhost:8080/actuator/configprops/{toMatch}
+Authorization: Basic admin 123456
+
+### logfile
+GET http://localhost:8080/actuator/logfile
+Authorization: Basic admin 123456
+
+### loggers
+GET http://localhost:8080/actuator/loggers
+Authorization: Basic admin 123456
+
+### loggers-name
+GET http://localhost:8080/actuator/loggers/{name}
+Authorization: Basic admin 123456
+
+### heapdump
+GET http://localhost:8080/actuator/heapdump
+Authorization: Basic admin 123456
+
+### threaddump
+GET http://localhost:8080/actuator/threaddump
+Authorization: Basic admin 123456
+
+### metrics
+GET http://localhost:8080/actuator/metrics
+Authorization: Basic admin 123456
+
+### metrics-requiredMetricName
+GET http://localhost:8080/actuator/metrics/{requiredMetricName}
+Authorization: Basic admin 123456
+
+### scheduledtasks
+GET http://localhost:8080/actuator/scheduledtasks
+Authorization: Basic admin 123456

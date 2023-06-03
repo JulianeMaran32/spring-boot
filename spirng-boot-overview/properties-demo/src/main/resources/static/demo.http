@@ -1,0 +1,11 @@
+###
+GET localhost:7070/mycoolapp/
+
+### teaminfo
+GET localhost:7070/mycoolapp/teaminfo
+
+### workout
+GET localhost:7070/mycoolapp/workout
+
+### fortune
+GET localhost:7070/mycoolapp/fortune

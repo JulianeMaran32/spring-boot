@@ -1,0 +1,16 @@
+# Use wildcard "*" to expose all endpoints
+# Can also expose individual endpoints with a comma-delimited list
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: My Actuator App
+    description: Actuator App
+    version: 1.0.0

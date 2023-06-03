@@ -1,0 +1,29 @@
+# Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        # Endpoints to include by name or wildcard
+        include: "*"
+        # Endpoints to exclude by name or wildcard
+        exclude: beans,mapping
+      # Base path for actuator endpoints
+      base-path: "/actuator"
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: My Actuator App
+    description: Actuator App
+    version: 1.0.0
+
+spring:
+  # Security
+  security:
+    user:
+      # default user name
+      name: "admin"
+      # password default user name
+      password: "123456"
