@@ -1,0 +1,27 @@
+### actuator
+GET http://localhost:8585/actuator
+Authorization: Basic admin 123456
+
+### health
+GET http://localhost:8585/actuator/health
+Authorization: Basic admin 123456
+
+### health-path
+GET http://localhost:8585/actuator/health/{*path}
+Authorization: Basic admin 123456
+
+### info
+GET http://localhost:8585/actuator/info
+Authorization: Basic admin 123456
+
+### auditevents - eventos de auditoria da aplicação
+GET http://localhost:8585/actuator/auditevents
+Authorization: Basic admin 123456
+
+### beans - lista de todos os beans registrados no contexto do Spring
+GET http://localhost:8585/actuator/beans
+Authorization: Basic admin 123456
+
+### mappings - lita todos os caminhos @RequestMapping
+GET http://localhost:8585/actuator/mappings
+Authorization: Basic admin 123456
