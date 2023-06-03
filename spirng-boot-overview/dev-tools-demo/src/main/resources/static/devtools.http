@@ -1,0 +1,8 @@
+### return "Hello World"
+GET http://localhost:8080
+
+### workout
+GET http://localhost:8080/workout
+
+### fortune
+GET http://localhost:8080/fortune
