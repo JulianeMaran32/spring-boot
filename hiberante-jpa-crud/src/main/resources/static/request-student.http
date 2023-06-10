@@ -1,0 +1,40 @@
+### CREATE - cadastrar estudante
+POST http://localhost:8080/student
+Content-Type: application/json
+
+{
+  "firstName": "Juliane",
+  "lastName": "Valiati Maran",
+  "email": "julianemaran@email.com"
+}
+
+### READ - buscar estudante pelo ID
+GET http://localhost:8080/student/13
+Content-Type: application/json
+
+### READ - buscar todos os estudantes cadastrados
+GET http://localhost:8080/student
+Content-Type: application/json
+
+### READ - buscar estudante pelo Sobrenome
+GET http://localhost:8080/student/list?lastName=Maran
+Content-Type: application/json
+
+### UPDATE - atualizar estudante
+PUT http://localhost:8080/student
+Content-Type: application/json
+
+{
+  "id": 13,
+  "firstName": "Juliane",
+  "lastName": "Valiati Maran",
+  "email": "julianemaran@email.com"
+}
+
+### DELETE - excluir estudante por ID
+DELETE http://localhost:8080/student/14
+Content-Type: application/json
+
+### DELETE - excluir todos
+DELETE http://localhost:8080/student
+Content-Type: application/json
