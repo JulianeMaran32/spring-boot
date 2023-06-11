@@ -1,0 +1,5 @@
+### Returns a list of students
+GET http://localhost:8080/api/students
+
+### Retrieve a single student
+GET http://localhost:8080/api/students/5
