@@ -2,6 +2,27 @@
 GET http://localhost:8080/api/employees
 Content-Type: application/json
 
+### list of employee - sort by last name (ascending is default) (crescente)
+GET http://localhost:8080/api/employees?sort=lastName
+
+### list of employee - sort by first name, descending (decrescente)
+GET http://localhost:8080/api/employees?sort=firstName,desc
+
+### list of employee - sort by last name, then first name, ascending
+GET http://localhost:8080/api/employees?sort=lastName,firstName,asc
+
+### first
+GET http://localhost:8080/api/employees?page=0&size=3
+
+### self
+GET http://localhost:8080/api/employees?page=0&size=3
+
+### next
+GET http://localhost:8080/api/employees?page=1&size=3
+
+### last
+GET http://localhost:8080/api/employees?page=1&size=3
+
 ### list of employee
 GET http://localhost:8080/api/employees/3
 Content-Type: application/json
@@ -30,3 +51,6 @@ Content-Type: application/json
 ### delete employee
 DELETE http://localhost:8080/api/employees/2
 Content-Type: application/json
+
+### Spring Data REST
+GET http://localhost:8080/api/employees

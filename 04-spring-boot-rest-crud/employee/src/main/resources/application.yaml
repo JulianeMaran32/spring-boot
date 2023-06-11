@@ -1,7 +1,7 @@
 server:
   port: 8080
-  servlet:
-    context-path: /api
+#  servlet:
+#    context-path: /api
 
 spring:
   datasource:
@@ -10,8 +10,9 @@ spring:
     password: root
   data:
     rest:
-      base-path: /magic-api
-      default-page-size: 20
+      base-path: /api
+      # retorna 20 elementos por página
+      default-page-size: 3
 
 logging:
   level:
